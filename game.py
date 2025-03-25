@@ -1,15 +1,19 @@
 import pygame
 import sys
 from alien import Alien
+from player import Player
 
 class Game:
     # Contains all variables and functions necessary for the smooth gameplay
     def __init__(self):
-        pass
+        space_ship = Player((screen_width / 2,screen_height),screen_width, 5) # start in bottom center of the screen
+        self.player = pygame.sprite.GroupSingle(space_ship)
 
     def run(self):
         # update and draw all sprite groups
-        pass
+        self.player.update()
+        self.player.draw(screen) # draw player into screen width
+
 
 if __name__ == '__main__':
     pygame.init()
@@ -26,7 +30,7 @@ if __name__ == '__main__':
                 pygame.quit()
                 sys.exit()
 
-        screen.fill((30,30,30)) # fill with rbg color
+        screen.fill((30,30,30)) # fill with rbg color, here is black
         game.run() # our game logic setup into the loop
 
         pygame.display.flip()
