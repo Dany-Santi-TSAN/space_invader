@@ -1,5 +1,6 @@
 import pygame
 import sys
+from alien import Alien
 
 class Game:
     # Contains all variables and functions necessary for the smooth gameplay
