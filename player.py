@@ -30,5 +30,11 @@ class Player(pygame.sprite.Sprite):
         elif keys[pygame.K_LEFT]:
             self.rect.x -= self.speed
 
+    def apply_screen_limits(self):
+        # Define the frame of max screen on x
+        self.rect.left = max(self.rect.left, 0)
+        self.rect.right = min(self.rect.right, self.limit_screen)
+
     def update(self):
         self.move()
+        self.apply_screen_limits()  # Apply screen limits after moving
