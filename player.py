@@ -7,6 +7,6 @@ class Player(pygame.sprite.Sprite):
         super().__init__()
 
         # Load the player image from path and convert it with alpha transparency
-        self.image = pygame.image.load('png').convert_alpha()
+        self.image = pygame.image.load('png/space_ship_image').convert_alpha()
         # Get rectangle object that represents the image and set its midbottom to the given position
         self.rect = self.image.get_rect(midbottom = pos)
