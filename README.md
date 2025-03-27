@@ -1,12 +1,14 @@
 # space_invader
 Create Space Invader Game from Scratch with Python
 
-Contributor :
-Thomas Fink, Data Analyst / Scientist
-Dany Tsan, Data Scientist
+### Contributor :
+- Thomas Fink, Data Analyst / Scientist
+- Dany Tsan, Data Scientist
 
 Date start :
 25/03/25
+
+### Source
 
 png source : https://www.nicepng.com/
 color = neon green #00ff1a
@@ -14,8 +16,7 @@ color = neon green #00ff1a
 ## How to play ?
 
 a = shoot laser
-
-direction pad for moving
+Direction pad for moving
 
 ## Diary
 
