@@ -79,5 +79,5 @@ class Player(pygame.sprite.Sprite):
     def update(self):
         self.move()
         self.apply_screen_limits() # Apply screen limits after moving
-        self.update_shoot()
-        self.lasers.update()
+        self.update_shoot() # Add cooldown between shots
+        self.lasers.update() # Update the lasers to move them upwards
