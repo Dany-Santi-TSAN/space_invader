@@ -11,9 +11,13 @@ Date start :
 png source : https://www.nicepng.com/
 color = neon green #00ff1a
 
-How play ?
+## How to play ?
+
 a = shoot laser
+
 direction pad for moving
+
+## Diary
 
 Day 1:
 - et up the environment with Pygame documentation
@@ -27,3 +31,5 @@ Day 2:
 - Correct laser sprite : No 'image' attribute in sprite
 - Correct loop for boundary
 - Ajust laser color to neon green
+- Restruction tree
+- Add folder test
