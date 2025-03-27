@@ -2,6 +2,7 @@ import pygame
 import sys
 from alien import Alien
 from player import Player
+from laser import Laser
 
 class Game:
     # Contains all variables and functions necessary for the smooth gameplay
@@ -12,7 +13,9 @@ class Game:
     def run(self):
         # update and draw all sprite groups
         self.player.update()
+        self.player.sprite.lasers.draw(screen) # run and draw laser when press shooting
         self.player.draw(screen) # draw player into screen width
+
 
 
 if __name__ == '__main__':
