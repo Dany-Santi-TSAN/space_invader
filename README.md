@@ -16,6 +16,7 @@ color = neon green #00ff1a
 ## How to play ?
 
 a = shoot laser
+
 Direction pad for moving
 
 ## Diary

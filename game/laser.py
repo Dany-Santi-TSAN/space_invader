@@ -17,12 +17,14 @@ class Laser(pygame.sprite.Sprite):
         self.speed = speed
         print(f"Laser speed set to: {speed}")  # Debug print for speed
 
-        self.height_y_limit = screen_height
+        self.screen_y_limit = screen_height
         print(f"Screen height constraint set to: {screen_height}")  # Debug print for screen height
+
+        self.kill_called = False  # Attribute for test
 
     def remove_laser(self):
         # Check if the laser is out of screen bounds
-        if not (-50 <= self.rect.y < self.height_y_limit +50):
+        if not (-50 <= self.rect.y < self.screen_y_limit +50):
             print("Laser out of bounds, removing laser")
             self.kill()
 
